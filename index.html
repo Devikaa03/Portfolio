@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devika Vinod</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,400;62..125,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="circuit" aria-hidden="true"></canvas>
+
+  <div class="topbar">
+    <span class="topbar-name">devika</span>
+    <p class="tagline">DESIGN ENTHUSIAST &nbsp;·&nbsp; ELECTRONICS EXPERT</p>
+    <a class="contact-btn" href="mailto:devikavinod.mec@gmail.com">Contact</a>
+  </div>
+  <div class="intro">
+    <p class="hello">Hello! I am</p>
+    <h1 class="name">DEVIKA<br>VINOD</h1>
+  </div>
+
+  <main class="home">
+    <div class="pic">
+      <img src="devika.png" alt="Illustration of Devika with a laptop and coffee">
+
+      <!-- Hotspots: left/top are % of the picture. Edit them to move the labels -->
+      <button class="hs" style="left:46%; top:74%;" data-open="about">About me</button>
+      <button class="hs" style="left:72%; top:64%;" data-open="projects">Projects</button>
+      <button class="hs" style="left:24%; top:52%;" data-open="wins">Wins</button>
+    </div>
+  </main>
+
+  <!-- ABOUT ME -->
+  <section class="panel" id="about">
+    <button class="close" data-close aria-label="Close">✕</button>
+    <div class="panel-in">
+      <h2>About me</h2>
+      <p>I’m a final-year Electronics &amp; Communication Engineering student at Govt. Model Engineering College, Kochi. I love designing hardware as much as building it: I model parts in CAD, lay out circuit boards, then turn them into working prototypes.</p>
+      <p>I’m the Documentation Head of CogniCor AICTE IDEALab, and I enjoy hardware hackathons, fitness, dancing and painting.</p>
+      <ul class="facts">
+        <li>Fusion 360, Onshape, AutoCAD</li>
+        <li>KiCad, LTSpice</li>
+        <li>Arduino, ESP32, Verilog HDL, C, Python</li>
+      </ul>
+      <p class="contact"><a href="mailto:devikavinod.mec@gmail.com">Email me</a></p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="panel" id="projects">
+    <button class="close" data-close aria-label="Close">✕</button>
+    <div class="panel-in">
+
+      <!-- Project list -->
+      <div class="proj-list">
+        <div class="curve-title" aria-hidden="false">
+            <h2>MY PROJECTS</h2>
+          </div>
+        <div class="proj-grid">
+          <button class="proj-card" data-p="1">
+            <img src="robo-arm.jpg" alt="Gesture Controlled Robo Arm">
+            <h3>Gesture Controlled Robo Arm</h3>
+          </button>
+          <button class="proj-card" data-p="2">
+            <img src="edgeflux.jpg" alt="EdgeFlux FPGA Smart Traffic Controller">
+            <h3>EdgeFlux – FPGA Smart Traffic Controller</h3>
+          </button>
+          <button class="proj-card" data-p="3">
+            <img src="helmet.jpg" alt="Helmet Detection System">
+            <h3>Helmet Detection System</h3>
+          </button>
+          <button class="proj-card" data-p="4">
+            <img src="mascot.jpg" alt="Interactive Mascot">
+            <h3>Interactive Mascot</h3>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project details (one shown at a time) -->
+      <div class="proj-detail" hidden>
+        <button class="back">← Back to projects</button>
+
+        <article data-id="1">
+            <img class="detail-img" src="robo-arm.jpg" alt="Gesture Controlled Robo Arm">
+            <h2>Gesture Controlled Robo Arm</h2>
+            <p class="meta">Team Size: 4 · Hardware Design Engineer · 2 months</p>
+            <p>Designed and developed a working prototype of a gesture-controlled robotic arm by integrating servo motors, Arduino and computer vision. Created CAD models in Fusion 360 and validated mechanical movement through iterative testing.</p>
+            <div class="tags"><span>Arduino</span><span>Mediapipe</span><span>Fusion 360</span></div>
+          
+            <h3 class="more-photos">More photos</h3>
+            <div class="photo-grid">
+              <img src="robo-arm-1.jpg" alt="Robo arm photo 1">
+              <img src="robo-arm-2.jpg" alt="Robo arm photo 2">
+              <img src="robo-arm-3.jpg" alt="Robo arm photo 3">
+            </div>
+          </article>
+
+        <article data-id="2" hidden>
+          <img class="detail-img" src="edgeflux.jpg" alt="EdgeFlux FPGA Smart Traffic Controller">
+          <h2>EdgeFlux – FPGA Based Smart Traffic Controller</h2>
+          <p class="meta">Team Size: 3 · Computer Vision &amp; FPGA Developer · 3 weeks</p>
+          <p>Developed an FPGA-based adaptive traffic controller using image processing for density estimation. Implemented traffic control logic and verified functionality through hardware simulation.</p>
+          <div class="tags"><span>Python</span><span>OpenCV</span><span>FPGA</span><span>VHDL</span></div>
+        </article>
+
+        <article data-id="3" hidden>
+          <img class="detail-img" src="helmet.jpg" alt="Helmet Detection System">
+          <h2>Helmet Detection System</h2>
+          <p class="meta">Team Size: 4 · Embedded Systems Developer · 1 month</p>
+          <p>Designed and implemented an embedded helmet detection system using ESP32-S3 Sense and Edge Impulse for real-time safety monitoring. Conducted system testing and performance evaluation for real-time deployment.</p>
+          <div class="tags"><span>ESP32-S3 Sense</span><span>Edge Impulse</span></div>
+        </article>
+
+        <article data-id="4" hidden>
+          <img class="detail-img" src="mascot.jpg" alt="Interactive Mascot">
+          <h2>Interactive Mascot</h2>
+          <p class="meta">Team Size: 6 · Product Design Engineer · 1 month</p>
+          <p>Designed and modelled the mascot in Fusion 360, integrating different materials and components to develop the physical prototype.</p>
+          <div class="tags"><span>Arduino</span><span>Ultrasonic Sensor</span><span>Servo Motor</span><span>NeoPixels</span><span>Fusion 360</span></div>
+          <h3 class="more-photos">More photos</h3>
+            <div class="photo-grid">
+              <img src="mascot-1.jpg" alt="mascot photo 1">
+              <img src="mascot-2.jpg" alt="mascot photo 2">
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WINS -->
+  <section class="panel" id="wins">
+    <button class="close" data-close aria-label="Close">✕</button>
+    <div class="panel-in">
+      <h2>Wins</h2>
+      <ul class="wins">
+        <li><b>1st place, Meclabs</b> · hardware expo, Excel 2024</li>
+        <li><b>1st place, Magic 3.0</b> · hardware hackathon, IEEE MEC SB</li>
+        <li><b>Finalist, IBETO</b> · innovation competition, Excel 2023</li>
+        <li><b>Project Expo, Tharang 2025</b> · national techno-cultural fest</li>
+        <li><b>Volunteer, FabFest 25</b> · Kerala Innovation Festival</li>
+        <li><b>1st place, KTU Interzone Badminton</b> · 2025</li>
+        <li><b>3rd place, KTU Interzone Volleyball</b> · 2025</li>
+        <li><b>PCB Designing with KiCad</b> · Coursera certification</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

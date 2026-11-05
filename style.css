@@ -1,0 +1,336 @@
+:root {
+    --red: #e63a2e;       /* main red background */
+    --dark: #8f2a22;      /* deep red for the title and lines */
+    --cream: #fff3e6;     /* light text */
+    --accent: #ffd8a8;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--red);
+    color: var(--cream);
+    font-family: "Archivo", "Trebuchet MS", sans-serif;
+  }
+  
+  #circuit {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* Top-left brand block */
+  .brand {
+    position: fixed;
+    top: 90px;
+    left: 6vw;
+    z-index: 10;
+    width: min(60vw, 420px);
+  }
+  .rule {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    width: 10px;
+    height: 120px;
+    background: var(--dark);
+  }
+  .dots {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 80px;
+    height: 90px;
+    background-image: radial-gradient(circle, var(--dark) 2px, transparent 2.5px);
+    background-size: 16px 16px;
+    opacity: 0.55;
+  }
+  .name {
+    margin: 0;
+    font-family: "Archivo Black", "Archivo", Impact, sans-serif;
+    font-weight: 900;
+    font-stretch: 125%;
+    font-size: clamp(2.2rem, 7vw, 4.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    color: var(--dark);
+    text-transform: uppercase;
+  }
+  .tagline {
+    margin: 10px 0 0;
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.7rem, 1.8vw, 0.95rem);
+    letter-spacing: 0.45em;
+    color: var(--dark);
+    text-transform: uppercase;
+  }
+  
+  /* Picture and hotspots */
+  .home {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 16px 3px;
+    overflow: hidden;
+  }
+  .pic {
+    position: relative;
+    height: calc(100vh - 90px);
+    aspect-ratio: 3 / 4;
+    max-width: 92vw;
+  }
+  .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .pic img {
+    width: 100%;
+    display: block;
+  }
+  .hs {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: var(--dark);
+    color: var(--cream);
+    border: 0;
+    border-radius: 99px;
+    padding: 6px 14px;
+    font: 700 0.85rem "Archivo", sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    animation: ring 1.8s infinite;
+  }
+  .hs:hover, .hs:focus-visible { background: #6b1f18; outline: none; }
+  @keyframes ring {
+    0%   { box-shadow: 0 0 0 0 rgba(143, 42, 34, 0.6); }
+    100% { box-shadow: 0 0 0 16px transparent; }
+  }
+  
+  /* Pop-up pages */
+  .panel {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background: var(--dark);
+    color: var(--cream);
+    overflow: auto;
+  }
+  .panel.open { display: block; }
+  .panel-in {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 6vw 60px;
+  }
+  .panel h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-stretch: 125%;
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 0 0 20px;
+  }
+  .panel p { font-size: 1.05rem; line-height: 1.7; }
+  .close {
+    position: fixed;
+    top: 16px;
+    right: 5vw;
+    background: var(--cream);
+    color: var(--dark);
+    border: 0;
+    border-radius: 99px;
+    padding: 8px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 21;
+  }
+  .facts { padding-left: 20px; line-height: 1.9; }
+  .contact a {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--accent);
+    color: #3a0b08;
+    padding: 10px 20px;
+    border-radius: 99px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .cards {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .card {
+    background: rgba(0, 0, 0, 0.18);
+    border: 2px solid rgba(255, 216, 168, 0.4);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 1.2rem; }
+  .card small { color: var(--accent); font-weight: 700; }
+  .card p { margin: 10px 0; }
+  .tags span {
+    display: inline-block;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 216, 168, 0.6);
+    border-radius: 99px;
+    padding: 2px 10px;
+    margin: 4px 4px 0 0;
+  }
+  .wins { list-style: none; padding: 0; }
+  .wins li {
+    border-left: 4px solid var(--accent);
+    padding: 8px 0 8px 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .hs { animation: none; }
+  }
+
+  /* Top bar */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+    background: var(--dark);
+    color: var(--cream);
+    z-index: 15;
+  }
+  .topbar-name {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+  }
+  .contact-btn {
+    background: var(--cream);
+    color: var(--dark);
+    padding: 8px 20px;
+    border-radius: 99px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .contact-btn:hover { background: var(--accent); }
+
+  /* Left-middle intro text */
+.intro {
+    position: fixed;
+    left: 6vw;
+    top: 30%;
+    transform: translateY(-50%);
+    width: min(34vw, 420px);
+    z-index: 10;
+  }
+  .intro .rule,
+  .intro .dots {
+    position: absolute;
+  }
+  .hello {
+    margin: 0 0 4px;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 3.6vw, 2.8rem);
+    color: var(--dark);
+  }
+  .intro .name {
+    font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+    font-weight: 900;
+    line-height: 0.95;
+  }
+
+  /* Projects: list and detail views */
+[hidden] { display: none !important; }
+
+.proj-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.proj-card {
+  background: rgba(0, 0, 0, 0.18);
+  border: 2px solid rgba(255, 216, 168, 0.4);
+  border-radius: 14px;
+  padding: 12px 12px 16px;
+  color: var(--cream);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.proj-card:hover,
+.proj-card:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+.proj-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.proj-card h3 {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+}
+
+.back {
+  background: var(--cream);
+  color: var(--dark);
+  border: 0;
+  border-radius: 99px;
+  padding: 8px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.detail-img {
+  width: 100%;
+  aspect-ratio : 3 / 2;
+  max-height: 340px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.15);
+  display: block;
+  margin-bottom: 20px;
+}
+.meta {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.more-photos {
+    margin: 32px 0 12px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+  }
+  .photo-grid img {
+    width: 100%;
+    aspect-ratio: 10 / 10;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
