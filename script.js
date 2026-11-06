@@ -125,3 +125,4 @@ document.querySelectorAll('.proj-card').forEach(card => {
 });
 projDetail.querySelector('.back').addEventListener('click', showProjectList);
 document.querySelector('[data-open="projects"]').addEventListener('click', showProjectList);
+

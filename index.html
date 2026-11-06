@@ -36,16 +36,20 @@
   <!-- ABOUT ME -->
   <section class="panel" id="about">
     <button class="close" data-close aria-label="Close">✕</button>
-    <div class="panel-in">
-      <h2>About me</h2>
-      <p>I’m a final-year Electronics &amp; Communication Engineering student at Govt. Model Engineering College, Kochi. I love designing hardware as much as building it: I model parts in CAD, lay out circuit boards, then turn them into working prototypes.</p>
-      <p>I’m the Documentation Head of CogniCor AICTE IDEALab, and I enjoy hardware hackathons, fitness, dancing and painting.</p>
-      <ul class="facts">
-        <li>Fusion 360, Onshape, AutoCAD</li>
-        <li>KiCad, LTSpice</li>
-        <li>Arduino, ESP32, Verilog HDL, C, Python</li>
-      </ul>
-      <p class="contact"><a href="mailto:devikavinod.mec@gmail.com">Email me</a></p>
+    <div class="paper-wrap">
+      <div class="paper">
+        <h2 class="paper-title">Helloo!!</h2>
+        <p class="paper-intro">I’m a final-year Electronics &amp; Communication Engineering student at Govt. Model Engineering College, Kochi. I love designing hardware as much as building it: I model parts in CAD, lay out circuit boards, then turn them into working prototypes.</p>
+
+        <h3 class="paper-h">Technical Skills</h3>
+        <p class="paper-text">KiCad, Fusion 360, Onshape, LTSpice, Arduino, ESP 32, Verilog HDL, C, Python, Machine Learning</p>
+
+        <h3 class="paper-h">Soft Skills</h3>
+        <p class="paper-text">Attention to Detail, Team Collaboration, Adaptability, Creativity</p>
+
+        <h3 class="paper-h">Hobbies</h3>
+        <p class="paper-text">Sports, Dancing, Painting ✿</p>
+      </div>
     </div>
   </section>
 
@@ -85,66 +89,247 @@
 
         <article data-id="1">
             <img class="detail-img" src="robo-arm.jpg" alt="Gesture Controlled Robo Arm">
-            <h2>Gesture Controlled Robo Arm</h2>
-            <p class="meta">Team Size: 4 · Hardware Design Engineer · 2 months</p>
-            <p>Designed and developed a working prototype of a gesture-controlled robotic arm by integrating servo motors, Arduino and computer vision. Created CAD models in Fusion 360 and validated mechanical movement through iterative testing.</p>
-            <div class="tags"><span>Arduino</span><span>Mediapipe</span><span>Fusion 360</span></div>
           
-            <h3 class="more-photos">More photos</h3>
-            <div class="photo-grid">
-              <img src="robo-arm-1.jpg" alt="Robo arm photo 1">
-              <img src="robo-arm-2.jpg" alt="Robo arm photo 2">
-              <img src="robo-arm-3.jpg" alt="Robo arm photo 3">
+            <p class="eyebrow">Robotics · Embedded Systems · Human-Machine Interaction</p>
+            <h2>Gesture-Controlled Robotic Arm</h2>
+            <p class="meta">Team Size: 4 · Hardware Design Engineer · 2 months</p>
+          
+            <div class="detail-block">
+              <h3>Project Overview</h3>
+              <p>A gesture-controlled robotic arm designed to replicate human hand movements through real-time gesture recognition. The system uses computer vision to interpret hand gestures and translates them into corresponding motor movements, enabling contactless control of a robotic arm.</p>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Objectives</h3>
+              <ul class="bullets">
+                <li>Develop a robotic arm controlled through hand gestures.</li>
+                <li>Implement real-time hand tracking and gesture recognition.</li>
+                <li>Convert detected gestures into motor control signals.</li>
+                <li>Establish communication between the vision system and the robotic hardware.</li>
+              </ul>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Technologies &amp; Components</h3>
+              <div class="tech-cols">
+                <div>
+                  <h4>Software</h4>
+                  <div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Computer Vision</span></div>
+                </div>
+                <div>
+                  <h4>Hardware</h4>
+                  <div class="tags"><span>Arduino</span><span>Servo Motors</span><span>Robotic Arm Structure</span><span>Webcam</span></div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Work Done</h3>
+              <p>Designed and developed a working prototype by integrating servo motors, Arduino and computer vision. Created CAD models in Fusion 360 and validated mechanical movement through iterative testing.</p>
+            </div>
+          
+            <h3 class="more-photos">Project Gallery</h3>
+            <div class="gallery-grid">
+              <figure class="g-item"><img src="robo-arm.jpg" alt="Robo arm cover"></figure>
+              <figure class="g-item"><img src="robo-arm-1.jpg" alt="Robo arm photo 1"></figure>
+              <figure class="g-item"><img src="robo-arm-2.jpg" alt="Robo arm photo 2"></figure>
+              <figure class="g-item"><img src="robo-arm-3.jpg" alt="Robo arm photo 3"></figure>
+              <figure class="g-item"><img src="robo-arm-4.jpg" alt="Robo arm photo 3"></figure>
+              <figure class="g-item"><video src="robo-arm-video.mp4" controls playsinline preload="metadata"></video></figure>
             </div>
           </article>
 
-        <article data-id="2" hidden>
-          <img class="detail-img" src="edgeflux.jpg" alt="EdgeFlux FPGA Smart Traffic Controller">
-          <h2>EdgeFlux – FPGA Based Smart Traffic Controller</h2>
-          <p class="meta">Team Size: 3 · Computer Vision &amp; FPGA Developer · 3 weeks</p>
-          <p>Developed an FPGA-based adaptive traffic controller using image processing for density estimation. Implemented traffic control logic and verified functionality through hardware simulation.</p>
-          <div class="tags"><span>Python</span><span>OpenCV</span><span>FPGA</span><span>VHDL</span></div>
-        </article>
+          <article data-id="2" hidden>
+            <img class="detail-img" src="edgeflux.jpg" alt="EdgeFlux FPGA Smart Traffic Controller">
+          
+            <p class="eyebrow">FPGA · Computer Vision · Digital Control</p>
+            <h2>EdgeFlux – FPGA-Based Smart Traffic Controller</h2>
+            <p class="meta">Team Size: 3 · Computer Vision &amp; FPGA Developer · 3 weeks</p>
+          
+            <div class="detail-block">
+              <h3>Project Overview</h3>
+              <p>EdgeFlux is an FPGA-based intelligent traffic control system designed to optimise traffic signal operation based on vehicle density. Unlike conventional fixed-time traffic controllers, the system analyses traffic conditions and adjusts signal control accordingly, aiming to improve traffic flow and reduce unnecessary waiting time.</p>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Objectives</h3>
+              <ul class="bullets">
+                <li>Develop a traffic controller based on vehicle-density estimation.</li>
+                <li>Implement image-processing techniques for traffic analysis.</li>
+                <li>Design an FPGA-based control system.</li>
+                <li>Explore adaptive signal timing based on traffic conditions.</li>
+              </ul>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Technologies Used</h3>
+              <div class="tech-cols">
+                <div>
+                  <h4>Software</h4>
+                  <div class="tags"><span>Python</span><span>OpenCV</span><span>Image Processing</span></div>
+                </div>
+                <div>
+                  <h4>Hardware</h4>
+                  <div class="tags"><span>FPGA (Basys 3)</span><span>Digital Control</span></div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Key Techniques</h3>
+              <div class="tags"><span>Grayscale Conversion</span><span>Thresholding</span><span>Sobel Edge Detection</span><span>Vehicle-Density Estimation</span><span>FSM Design</span><span>XDC Constraints</span></div>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Work Done</h3>
+              <p>Developed an FPGA-based adaptive traffic controller using image processing for density estimation. Implemented traffic control logic and verified functionality through hardware simulation.</p>
+            </div>
+          
+            <h3 class="more-photos">Project Gallery</h3>
+            <div class="gallery-grid">
+              <figure class="g-item"><img src="edgeflux.jpg" alt="EdgeFlux cover"></figure>
+              <figure class="g-item"><img src="edgeflux-1.jpg" alt="EdgeFlux photo 1"></figure>
+            </div>
+          </article>
 
-        <article data-id="3" hidden>
-          <img class="detail-img" src="helmet.jpg" alt="Helmet Detection System">
-          <h2>Helmet Detection System</h2>
-          <p class="meta">Team Size: 4 · Embedded Systems Developer · 1 month</p>
-          <p>Designed and implemented an embedded helmet detection system using ESP32-S3 Sense and Edge Impulse for real-time safety monitoring. Conducted system testing and performance evaluation for real-time deployment.</p>
-          <div class="tags"><span>ESP32-S3 Sense</span><span>Edge Impulse</span></div>
-        </article>
+
+          <article data-id="3" hidden>
+            <img class="detail-img" src="helmet.jpg" alt="Helmet Detection System">
+          
+            <p class="eyebrow">Computer Vision · Embedded Systems · Road Safety</p>
+            <h2>Helmet Detection System</h2>
+            <p class="meta">Team Size: 4 · Embedded Systems Developer · 1 month</p>
+          
+            <div class="detail-block">
+              <h3>Project Overview</h3>
+              <p>A computer vision-based system designed to detect whether two-wheeler riders are wearing helmets. The project explores automated visual monitoring to support road safety and identify helmet compliance.</p>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Objectives</h3>
+              <ul class="bullets">
+                <li>Develop an automated helmet detection system.</li>
+                <li>Identify helmet usage from visual inputs.</li>
+                <li>Apply computer vision techniques for object detection.</li>
+                <li>Explore automated road safety monitoring.</li>
+              </ul>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Technologies &amp; Components</h3>
+              <div class="tech-cols">
+                <div>
+                  <h4>Hardware</h4>
+                  <div class="tags"><span>ESP32-S3 Sense</span></div>
+                </div>
+                <div>
+                  <h4>Software</h4>
+                  <div class="tags"><span>Edge Impulse</span><span>Computer Vision</span></div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Component Roles</h3>
+              <ul class="bullets">
+                <li><b>ESP32-S3 Sense:</b> Embedded hardware platform for image capture and on-device processing.</li>
+                <li><b>Edge Impulse:</b> Machine learning model development, training and deployment for helmet detection.</li>
+                <li><b>Embedded Systems:</b> Real-time implementation of the helmet detection system.</li>
+                <li><b>Computer Vision:</b> Visual identification of helmet usage.</li>
+              </ul>
+            </div>
+          
+    
+
 
         <article data-id="4" hidden>
-          <img class="detail-img" src="mascot.jpg" alt="Interactive Mascot">
-          <h2>Interactive Mascot</h2>
-          <p class="meta">Team Size: 6 · Product Design Engineer · 1 month</p>
-          <p>Designed and modelled the mascot in Fusion 360, integrating different materials and components to develop the physical prototype.</p>
-          <div class="tags"><span>Arduino</span><span>Ultrasonic Sensor</span><span>Servo Motor</span><span>NeoPixels</span><span>Fusion 360</span></div>
-          <h3 class="more-photos">More photos</h3>
-            <div class="photo-grid">
-              <img src="mascot-1.jpg" alt="mascot photo 1">
-              <img src="mascot-2.jpg" alt="mascot photo 2">
-        </article>
+            <img class="detail-img" src="mascot.jpg" alt="Interactive Mascot">
+          
+            <p class="eyebrow">Embedded Systems · Electronics · Interaction Design</p>
+            <h2>Interactive Mascot</h2>
+            <p class="meta">Team Size: 6 · Product Design Engineer · 1 month</p>
+          
+            <div class="detail-block">
+              <h3>Project Overview</h3>
+              <p>An interactive mascot designed to create an engaging experience through physical interaction with users. The project explores the integration of electronic hardware, sensors and programmed responses to develop an interactive system.</p>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Objectives</h3>
+              <ul class="bullets">
+                <li>Develop an interactive mascot with responsive behaviour.</li>
+                <li>Integrate hardware components for user interaction.</li>
+                <li>Implement programmed responses based on input signals.</li>
+                <li>Explore the practical application of embedded systems and electronics.</li>
+              </ul>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Technologies &amp; Components</h3>
+              <div class="tags"><span>CAD Designing</span><span>Arduino</span><span>Ultrasonic Sensors</span><span>RGB LEDs</span><span>Servo Motors</span></div>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Component Roles</h3>
+              <ul class="bullets">
+                <li><b>CAD Designing:</b> 3D modelling and designing the mascot structure.</li>
+                <li><b>Arduino:</b> Microcontroller for processing inputs and controlling outputs.</li>
+                <li><b>Ultrasonic Sensors:</b> Proximity detection and distance measurement.</li>
+                <li><b>RGB LEDs:</b> Visual feedback through programmable lighting.</li>
+                <li><b>Servo Motors:</b> Controlled mechanical movement of the mascot.</li>
+              </ul>
+            </div>
+          
+            <div class="detail-block">
+              <h3>Work Done</h3>
+              <p>Designed and modelled the mascot in Fusion 360, integrating different materials and components to develop the physical prototype.</p>
+            </div>
+          
+            <h3 class="more-photos">Project Gallery</h3>
+            <div class="gallery-grid">           
+              <figure class="g-item"><img src="mascot-1.jpg" alt="Interactive mascot cover"></figure>
+              <figure class="g-item"><img src="mascot-2.jpg" alt="Interactive mascot cover"></figure>
+              <figure class="g-item"><video src="mascot-video.mp4" controls playsinline preload="metadata"></video></figure>
+            </div>
+          </article>
       </div>
 
     </div>
   </section>
 
-  <!-- WINS -->
+  <!-- WINS / ACHIEVEMENTS -->
   <section class="panel" id="wins">
     <button class="close" data-close aria-label="Close">✕</button>
     <div class="panel-in">
-      <h2>Wins</h2>
-      <ul class="wins">
-        <li><b>1st place, Meclabs</b> · hardware expo, Excel 2024</li>
-        <li><b>1st place, Magic 3.0</b> · hardware hackathon, IEEE MEC SB</li>
-        <li><b>Finalist, IBETO</b> · innovation competition, Excel 2023</li>
-        <li><b>Project Expo, Tharang 2025</b> · national techno-cultural fest</li>
-        <li><b>Volunteer, FabFest 25</b> · Kerala Innovation Festival</li>
-        <li><b>1st place, KTU Interzone Badminton</b> · 2025</li>
-        <li><b>3rd place, KTU Interzone Volleyball</b> · 2025</li>
-        <li><b>PCB Designing with KiCad</b> · Coursera certification</li>
-      </ul>
+      <h2>Wins &amp; Achievements</h2>
+
+      <div class="detail-block">
+        <h3>Key Positions</h3>
+        <ul class="bullets">
+          <li>Documentation Head, CogniCor AICTE IDEALab.</li>
+        </ul>
+      </div>
+
+      <div class="detail-block">
+        <h3>Courses &amp; Certifications</h3>
+        <ul class="bullets">
+          <li><b>PCB Designing with KiCad</b>, Coursera. Skilled in PCB layout design, routing and design rule checks.</li>
+          <li><b>AutoCAD</b>, hands-on internship training with Internspot Innovation.</li>
+        </ul>
+      </div>
+
+      <div class="detail-block">
+        <h3>Achievements &amp; Activities</h3>
+        <ul class="bullets">
+          <li><b>1st place, Meclabs</b>, hardware expo at Excel 2024, the annual techno-managerial fest of Govt. Model Engineering College.</li>
+          <li><b>1st place, Magic 3.0</b>, hardware hackathon by IEEE MEC SB.</li>
+          <li><b>Finalist, IBETO</b>, technical innovation competition at Excel 2023.</li>
+          <li><b>Volunteer, FabFest 25</b>, Kerala Innovation Festival by Kerala Startup Mission.</li>
+          <li><b>Project Expo, Tharang 2025</b>, national level techno-cultural fest by IHRD.</li>
+          <li><b>1st place, KTU Interzone Badminton Tournament</b>, 2025.</li>
+          <li><b>3rd place, KTU Interzone Volleyball Tournament</b>, 2025.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
