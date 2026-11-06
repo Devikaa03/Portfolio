@@ -494,7 +494,7 @@
     font-family: "Caveat", cursive;
     font-weight: 700;
     font-size: 2.6rem;
-    color: #c9446a;
+    color: #7d1f3d;
     line-height: 1.1;
   }
   #about .paper-intro,
@@ -510,7 +510,7 @@
     font-family: "Caveat", cursive;
     font-weight: 700;
     font-size: 1.7rem;
-    color: #c9446a;
+    color: #7d1f3d;
   }
   #about .paper-h::after {
     content: "";
